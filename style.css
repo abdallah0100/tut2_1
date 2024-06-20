@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.calculator{
+    width: 550px;
+    height: 250px;
+    border-radius: 8px;
+    border: 3px solid grey;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#themeButton{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.input_area{
+    width: 100%;
+    height: 15%;
+    border-radius: 5px 5px 0px 0px;
+}
+.button_area{
+    width: 100%;
+    height: 85%;
+    border-radius: 0 0 4px 4px;
+    display: flex;
+    margin: auto;
+}
+.input_field{
+    position: relative;
+    border-radius: 3px;
+    width: 99%;
+    height: 95%;
+    border: none;
+    font-size: 30px;
+}
+.left_buttons{
+    width: 60%;
+    height: 100%;
+    border-radius: 0 0 0px 4px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5px;
+}
+.calc_button{
+    width: 16.65%;
+    height: 20%;
+    display: inline-block;
+    margin-left: -4px;
+    background-color: rgba(186, 180, 180, 0.288);
+}
+.calc_button2{
+    width: 25%;
+    height: 20%;
+    display: inline-block;
+    margin-left: -4px;
+}
+.firstCell{
+    margin-top: -1px;
+}
+
+.numbersDiv{
+    margin-left: -20px;
+    width: 44%;
+    height: 100%;
+    margin: auto;
+}
+.numbers{
+    background-color: white;
+    border: 1px solid black;
+    
+}
+.basicOperation{
+    background-color: cyan;
+}
+button{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.dark .numbers{
+    background-color: grey;
+}
+
+.dark .basicOperation{
+    background-color: cadetblue;
+}
+
+.dark .calc_button{
+    background-color: rgb(55 65 81);
+}

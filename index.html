@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculator - Tutorial 2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+</head>
+<body class="bg-white dark:bg-gray-700 dark:text-yellow-700">
+  <button id="themeButton" onclick="toggle()">Dark/Light Mode</button>
+    <div class="calculator">
+        <div class="input_area">
+            <input type="text" disabled="true" value="0" class="input_field">
+        </div>
+        <div class="button_area">
+
+            <div class="left_buttons">
+                <button class="calc_button">(</button>
+                <button class="calc_button">)</button>
+                <button class="calc_button">MC</button>
+                <button class="calc_button">M+</button>
+                <button class="calc_button">M-</button>
+                <button class="calc_button">MR</button>
+                
+
+                <button class="calc_button firstCell">2<sup>nd</sup></button>
+                <button class="calc_button">x<sup>2</sup></button>
+                <button class="calc_button">x<sup>3</sup></button>
+                <button class="calc_button">x<sup>y</sup></button>
+                <button class="calc_button">e<sup>x</sup></button>
+                <button class="calc_button">10<sup>x</sup></button>
+                
+                
+                <button class="calc_button" ><sup></sup>1/x</button>
+                <button class="calc_button"><sup></sup><span >2</span>&#8730;x
+                </button>
+                <button class="calc_button"><sup></sup><span>3</span>&#8730;x
+                </button>
+                <button class="calc_button"><sup></sup><spa>y</spa>&#8730;x
+                </button>
+                <button class="calc_button"><sup></sup>ln</button>
+                <button class="calc_button"><sup></sup>log</button>
+                
+                
+                <button class="calc_button">x!</button>
+                <button class="calc_button">sin</button>
+                <button class="calc_button">cos</button>
+                <button class="calc_button">tan</button>
+                <button class="calc_button">e</button>
+                <button class="calc_button">EE</button>
+                
+                
+                <button class="calc_button">Deg</button>
+                <button class="calc_button">sinh</button>
+                <button class="calc_button">cosh</button>
+                <button class="calc_button">tanh</button>
+                <button class="calc_button">pi</button>
+                <button class="calc_button">Rand</button>
+            </div>
+
+            <div class="numbersDiv">
+                <button class="calc_button2" >AC</button>
+                <button class="calc_button2">+/-</button>
+                <button class="calc_button2">%</button>
+                <button class="calc_button2 basicOperation">/</button>
+
+                <button class="calc_button2 numbers">7</button>
+                <button class="calc_button2 numbers">8</button>
+                <button class="calc_button2 numbers">9</button>
+                <button class="calc_button2 basicOperation">X</button>
+
+                <button class="calc_button2 numbers">4</button>
+                <button class="calc_button2 numbers">5</button>
+                <button class="calc_button2 numbers">6</button>
+                <button class="calc_button2 basicOperation">-</button>
+
+                <button class="calc_button2 numbers">1</button>
+                <button class="calc_button2 numbers">2</button>
+                <button class="calc_button2 numbers">3</button>
+                <button class="calc_button2 basicOperation">+</button>
+
+                <button class="calc_button2 numbers" style="width: 50%;">0</button>
+                <button class="calc_button2 numbers">.</button>
+                <button class="calc_button2 basicOperation">=</button>
+            </div>
+        </div>
+    </div>
+    <!-- your app code goes here -->
+
+    <!-- special scripts for integration in App Gallery - must be placed at the bottom of the HTML after your code -->
+    <script>
+        // custom config for the MTW app 
+        const mtwAppConfig = {
+            border: true // app border in the MTW page                    
+        }
+
+        ///////////////////////////////////////////////////////
+        // implement this functions in order to use private API        
+        const sendPrivateApiRequest = async () => {
+            // your code here:
+            // sendRequestToParent({ cat: 'getAssets' })
+        }        
+
+        const acceptPrivateApiResponse = async (data) => {
+            // process received data here:
+            // console.log(data)
+        }
+
+        // use this in order to send on document load
+        document.addEventListener('DOMContentLoaded', () => {
+            // your code here:
+            //sendRequestToParent({ method: 'getAssets' })
+        })
+
+    </script>
+    <script src="main.js"></script>
+    <script src="https://morethanwallet.com/appstore/index.js"></script>
+</body>
+</html>
