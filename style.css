@@ -106,3 +106,11 @@ button{
 .dark .calc_button3{
     background-color: rgb(55 65 81);
 }
+
+button:hover{
+    background-color: rgb(225, 218, 218);
+}
+
+.dark button:hover{
+    background-color: rgb(65, 63, 63);
+}
